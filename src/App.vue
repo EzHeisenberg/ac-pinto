@@ -1,32 +1,89 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <Navigation></Navigation>
     <router-view/>
+
+
+
+
+
+
+
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+<script>
+// @ is an alias to /src
+import Navigation from '@/components/Navigation.vue'
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  components: {
+    Navigation,
   }
 }
+</script>
+
+
+
+<style lang="sass">
+@import "styles/variables.sass"
+
+
+@font-face
+  font-family: "Eurostyle"
+  src: url("styles/fonts/Eurostyle.ttf") format("truetype")
+
+@font-face
+  font-family: "ObjektivMk2W03-Bold"
+  src: url("styles/fonts/Objektiv Mk2 W03 Bold.ttf") format("truetype")
+
+@font-face
+  font-family: "ObjektivMk2W03-Light"
+  src: url("styles/fonts/Objektiv Mk2 W03 Regular.ttf") format("truetype")
+
+
+body
+  margin: 0
+  padding: 0
+  min-height: 100vh
+  background-color: $colors-yellow
+
+.container
+  padding: 0 20px
+
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+
+
+.big-title
+  font-family: $font-title
+  font-size: $size-big-title
+  padding-top: 20px
+
+
+.title
+  font-family: $font-title
+  font-size: $size-title
+
+
+
+.subtitle
+  font-family: $font-paragraph-regular
+  font-size: $size-subtitle
+  padding-top: 10px
+
+
+
+
+
+.c-white
+  color: $colors-white
+
+.c-black
+  color: $colors-black
+
+
 </style>

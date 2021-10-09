@@ -1,0 +1,104 @@
+
+
+// fonts-size
+$size-title: 32px
+$size-big-title: 40px
+$size-subtitle: 20px
+$size-paragraphe: 15px
+
+
+// fonts
+$font-title: 'Eurostyle', sans-serif
+$font-paragraph-bold: 'ObjektivMk2W03-Bold', sans-serif
+$font-paragraph-regular: 'ObjektivMk2W03-Light', sans-serif
+
+
+$colors-yellow: #9C7E37
+$colors-red: #501C26
+$colors-silver: #C0C0C0
+$colors-black: #000
+$colors-white: #FFF
+
+
+
+
+
+
+.text-focus-in
+  -webkit-animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+  animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+
+.text-blur-out
+  -webkit-animation: text-blur-out 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53) both
+  animation: text-blur-out 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53) both
+
+.scale-in-hor-center
+  -webkit-animation: scale-in-hor-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+  animation: scale-in-hor-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+
+
+@-webkit-keyframes text-focus-in
+  0%
+    -webkit-filter: blur(12px)
+    filter: blur(12px)
+    opacity: 0
+
+  100%
+    -webkit-filter: blur(0px)
+    filter: blur(0px)
+    opacity: 1
+
+
+@keyframes text-focus-in
+  0%
+    -webkit-filter: blur(12px)
+    filter: blur(12px)
+    opacity: 0
+
+  100%
+    -webkit-filter: blur(0px)
+    filter: blur(0px)
+    opacity: 1
+
+
+
+@-webkit-keyframes text-blur-out
+  0%
+    -webkit-filter: blur(0.01)
+    filter: blur(0.01)
+
+  100%
+    -webkit-filter: blur(12px) opacity(0%)
+    filter: blur(12px) opacity(0%)
+
+@keyframes text-blur-out
+  0%
+    -webkit-filter: blur(0.01)
+    filter: blur(0.01)
+
+  100%
+    -webkit-filter: blur(12px) opacity(0%)
+    filter: blur(12px) opacity(0%)
+
+
+@-webkit-keyframes scale-in-hor-center
+  0%
+    -webkit-transform: scaleX(0)
+    transform: scaleX(0)
+    opacity: 1
+
+  100%
+    -webkit-transform: scaleX(1)
+    transform: scaleX(1)
+    opacity: 1
+
+@keyframes scale-in-hor-center
+  0%
+    -webkit-transform: scaleX(0)
+    transform: scaleX(0)
+    opacity: 1
+
+  100%
+    -webkit-transform: scaleX(1)
+    transform: scaleX(1)
+    opacity: 1
