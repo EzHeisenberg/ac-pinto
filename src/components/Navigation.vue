@@ -131,15 +131,17 @@ export default {
 <style lang="sass" scoped>
 
 .list-menu
-  padding: 30px
+  padding: 15px
   ul
+    margin: 0
+    padding: 0
     list-style: none
     li
-      width: 70%
+      width: calc(100vw - 21%)
       margin: auto
       border-bottom: solid 1px #ececec
       font-family: $font-title
-      font-size: 40px
+      font-size: 30px
       a
         color: #000000
         text-decoration: none
@@ -148,10 +150,10 @@ export default {
 
 .links-animation
   div
-    padding: 50px 0
+    padding: 40px 0
     transition: .6s
     &:hover
-      padding: 65px 0
+      padding: 55px 0
       color: $colors-red
 
 
@@ -161,30 +163,11 @@ export default {
     height: 70px
     padding-right: 20px
 
-  //justify-content: center
-  //display: flex
-  //align-items: center
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 .sidenav
-  height: 100%
+  height: 100vh
   width: 0
   position: fixed
   top: 0
@@ -196,17 +179,12 @@ export default {
   background-color: #ffffff
 
 svg
-  height: 60px
-  width: 60px
+  height: 80px
+  width: 80px
   position: fixed
-
-.fixed-right
-  display: flex
-  justify-content: flex-end
+  right: 0
 
 .plates
-  right: 0
-  top: 0
   position: absolute
   cursor: pointer
   display: flex
@@ -215,8 +193,7 @@ svg
   width: fit-content
 
 .plate
-  height: 60px
-  width: 60px
+  width: 50px
   z-index: 11
 
 .burger
@@ -295,6 +272,16 @@ svg
   .x
     transition: transform 400ms 250ms
 
+
+@media screen and (max-width: 900px)
+
+@media screen and (max-width: 700px)
+
+
+@media screen and (max-width: 480px)
+
+
+@media screen and (max-width: 375px)
 
 
 </style>
